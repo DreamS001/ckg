@@ -1,0 +1,325 @@
+.ckg_banner{
+	width: 100%;
+	height: 580px;
+	background-image: linear-gradient(0deg, 
+		#ff5f4b 0%, 
+		#ff8474 100%);
+}
+.ckg_banner .ckg_banner_box{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.ckg_banner .ckg_banner_item{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.ckg_banner .ckg_banner_item .ckg_banner_title{
+	font-size: 50px;
+	color: #FFF;
+	font-weight: 700;
+	margin-top: 80px;
+}
+.ckg_banner .ckg_banner_item p{
+	font-size: 28px;
+	color: #ffffff;
+	margin: 30px 0 90px 0;
+}
+
+
+.ckg_wx{
+	width: 100%;
+	height: 700px;
+	background-color: #f6f7fb;
+}
+.ckg_wx .ckg_title{
+	text-align: center;
+	padding: 60px 0 100px 0;
+	box-sizing: border-box;
+}
+.ckg_wx .ckg_title p{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+	color: #666666;
+}
+.ckg_wx .ckg_title .ckg_p{
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 3px;
+	color: #353535;
+}
+.ckg_wx .ckg_card{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ckg_wx .ckg_card .ckg_card_item{
+	width: 33.333%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 25px;
+}
+.ckg_wx .ckg_card .ckg_card_item span{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+.ckg_wx .ckg_card .ckg_card_item .ckg_span{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #353535;
+	margin: 22px 0 13px 0;
+}
+
+
+.ckg_shop{
+	width: 100%;
+	background-color: #ffffff;
+}
+.ckg_shop .ckg_title{
+	text-align: center;
+	padding: 60px 0 80px 0;
+	box-sizing: border-box;
+}
+.ckg_shop .ckg_title p{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+	color: #666666;
+}
+.ckg_shop .ckg_title .ckg_p{
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 3px;
+	color: #353535;
+}
+.ckg_shop .ckg_card{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ckg_shop .ckg_card .ckg_card_item{
+	width: 50%;
+	height: 175px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.ckg_shop .ckg_card .ckg_card_item.ckg_shop_active{
+	background-color: #ffffff;
+	box-shadow: 1px 2px 10px 0px 
+		rgba(0, 0, 0, 0.1);
+	border: solid 1px #e2e2e2;
+}
+.ckg_shop .ckg_card .ckg_card_item .ckg_shop_left{
+	width: 20%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding-top: 45px;
+	box-sizing: border-box;
+}
+.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 55px;
+	box-sizing: border-box;
+}
+.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right span{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 24px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right .ckg_span{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #ff5f4b;
+	margin-bottom: 20px;
+}
+
+.ckg_visitors{
+	width: 100%;
+	background-color: #f6f7fb;
+	padding-bottom: 50px;
+	box-sizing: border-box;
+}
+.ckg_visitors .ckg_title{
+	text-align: center;
+	padding: 60px 0 80px 0;
+	box-sizing: border-box;
+}
+.ckg_visitors .ckg_title p{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+	color: #666666;
+}
+.ckg_visitors .ckg_title .ckg_p{
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 3px;
+	color: #353535;
+}
+.ckg_visitors .ckg_card{
+	width: 100%;
+	display: flex;
+}
+.ckg_visitors .ckg_card .ckg_card_item{
+	width: 33.333%;
+	height: 430px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+.ckg_visitors .ckg_card .ckg_card_item span{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #666666;
+}
+.ckg_visitors .ckg_card .ckg_card_item .ckg_span{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #353535;
+	margin-top: 26px;
+	margin-bottom: 10px;
+}
+.ckg_scene{
+	width: 100%;
+	background-color: #ffffff;
+	padding-bottom: 78px;
+	box-sizing: border-box;
+}
+.ckg_scene .ckg_title{
+	text-align: center;
+	padding: 60px 0 80px 0;
+	box-sizing: border-box;
+}
+.ckg_scene .ckg_title p{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+	color: #666666;
+}
+.ckg_scene .ckg_title .ckg_p{
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 3px;
+	color: #353535;
+}
+.ckg_scene .ckg_card{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ckg_scene .ckg_card .ckg_card_item{
+	width: 18.5%;
+	height: 168px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 1.5%;
+	margin-right: 1.5%;
+	position: relative;
+}
+.ckg_scene .ckg_card .ckg_card_item:nth-child(5n){
+	margin-right: 0;
+}
+.ckg_scene .ckg_card .ckg_card_item .ckg_mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 168px;
+}
+.ckg_scene .ckg_card .ckg_card_item .ckg_word_box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	width: 100%;
+	height: 168px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 25px 0;
+	box-sizing: border-box;
+}
+.ckg_scene .ckg_card .ckg_card_item .ckg_word_box:hover{
+	background-color: #ff5f4b;
+	opacity: 0.6;
+}
+.ckg_scene .ckg_card .ckg_card_item .ckg_word_box span{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #ffffff;
+	z-index: 8888;
+}
+
+
+
+
+
+.ckg_trial{
+	width: 100%;
+	background-image: linear-gradient(0deg,#ff5f4b 0%,#ff8474 100%);
+}
+.ckg_trial .ckg_title{
+	text-align: center;
+	padding: 30px 0 20px 0;
+	box-sizing: border-box;
+}
+.ckg_trial .ckg_title .ckg_p{
+	font-size: 36px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}

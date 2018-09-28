@@ -1,0 +1,45 @@
+.ckg_footer{
+	width: 100%;
+	background-color: #303030;
+}
+.ckg_footer .ckg_support{
+	padding: 100px 60px 60px 60px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #FFF;
+	display: flex;
+}
+.ckg_footer .ckg_support_item{
+	width: 25%;
+	height: 195px;
+}
+.ckg_footer .ckg_support_item  p{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #bbbbbb;
+}
+.ckg_footer .ckg_support_item .ckg_support_item_title{
+	font-size: 16px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+.ckg_footer .ckg_support_item .ckg_flower{
+	width: 120px;
+	height: 120px;
+}
+.ckg_copyright{
+	width: 100%;
+	height: 73px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #bbbbbb;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cKugua-苦瓜商城</title>
+    <link href="./favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/button.css">
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_header.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_footer.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/ckg_shop.css"> -->
+    <style type="text/css">
+        .ckg_header{
+            background-color: #893dff;
+        }
+        #ckg_logo {
+            background: url('../images/retail/logo.png') 0 0 no-repeat;
+        }
+        .ckg_menu li a {
+            color: #ffffff;
+            opacity: .8;
+        }
+        .ckg_menu .ckg_active a{
+            border-bottom: 2px solid transparent;
+            margin-top: 17px;
+        }
+        .ckg_menu .ckg_active s{
+            border-right: 6px solid #ffffff;
+        }
+        .ckg_menu li s{
+            border-right: 6px solid #ffffff;
+        }
+    </style>
+</head>
+<body style="margin-top: -10px;" topmargin="0" oncontextmenu="return false" ondragstart="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
+	<!-- 顶部导航栏 -->
+	<header id="ckg_header" class="ckg_header"></header><!-- /header -->
+	
+
+	
+    <!-- 试用小程序 -->
+    <div class="ckg_trial" style="background-image: linear-gradient(0deg,#893dff 0%,#a85bf9 100%);">
+    	<div class="ckg_layout">
+    		<div class="ckg_title" style="text-align: center;padding: 30px 0 20px 0;box-sizing: border-box;">
+    			<p class="ckg_p" style="font-size: 36px;color: #ffffff;">立即注册免费试用最火爆的小程序</p>
+    			<button class="button button-action" style="width: 180px;height: 44px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 3px; font-size: 24px;color: #8f44fe;">立即注册</button>
+    		</div>
+    	</div>
+    </div>
+    <!-- 底部 -->
+    <div class="ckg_footer"></div>
+</body>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ckg_header").load("./header/ckg_header_3.html");
+		$(".ckg_footer").load("./ckg_footer.html");
+	});
+
+</script>
+
+
+</html>
