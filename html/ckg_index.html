@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/ckg_header.css">
 	<link rel="stylesheet" type="text/css" href="../css/ckg_footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/ckg_index.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_animation.css">
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../assets/js/ckg_public.js"></script>
 </head>
@@ -27,16 +28,60 @@
 
         <div class="carousel-inner" role="listbox">
           <div class="item active" style="background: #82b547;">
-            <a href="#" class="img_pc" style="background-image: url()"></a>
+            <div class="ckg_layout">
+            	<div class="ckg_banner_box">
+	    			<div class="ckg_banner_item">
+	    				<div class="ckg_banner_title">苦瓜零售</div>
+	    				<p>打通线上线下交易环节  助力门店营销服务升级</p>
+	    				<button class="button button-action" style="width: 160px;height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #ff6754;">了解详情</button>
+	    			</div>
+	    			<div class="ckg_banner_item">
+	                     <img src="../images/index/ckg_index.png" id="shake_icon">    
+	                </div>
+	    		</div>
+            </div>
           </div>
-          <div class="item" style="background: blue;">
-            <a href="#" class="img_p" style="background-image: url()"></a>
+          <div class="item" style="background: #ff5f4b;">
+            <div class="ckg_layout">
+            	<div class="ckg_banner_box">
+	    			<div class="ckg_banner_item">
+	    				<div class="ckg_banner_title">苦瓜零售</div>
+	    				<p>打通线上线下交易环节  助力门店营销服务升级</p>
+	    				<button class="button button-action" style="width: 160px;height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #ff6754;">了解详情</button>
+	    			</div>
+	    			<div class="ckg_banner_item">
+	                     <img src="../images/retail/ckg_retail.png" id="shake_icon">    
+	                </div>
+	    		</div>
+            </div>
           </div>
-          <div class="item" style="background: green;">
-            <a href="#" class="img_pc" style="background-image: url()"></a>
+          <div class="item" style="background: #a85bf9;">
+            <div class="ckg_layout">
+            	<div class="ckg_banner_box">
+	    			<div class="ckg_banner_item">
+	    				<div class="ckg_banner_title">苦瓜商城</div>
+	    				<p>打通线上线下交易环节  助力门店营销服务升级</p>
+	    				<button class="button button-action" style="width: 160px;height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #a85bf9;">了解详情</button>
+	    			</div>
+	    			<div class="ckg_banner_item">
+	                     <img src="../images/shop/ckg_shop.png" id="shake_icon">    
+	                </div>
+	    		</div>
+            </div>
           </div>
-          <div class="item" style="background: yellow;">
-            <a href="#" class="img_pc" style="background-image: url()"></a>
+          <div class="item" style="background: #ff5f4b;">
+            <div class="ckg_layout">
+            	<div class="ckg_banner_box">
+	    			<div class="ckg_banner_item">
+	    				<div class="ckg_banner_title">苦瓜零售</div>
+	    				<p>打通线上线下交易环节  助力门店营销服务升级</p>
+	    				<button class="button button-action" style="width: 160px;height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #ff6754;">了解详情</button>
+	    			</div>
+	    			<div class="ckg_banner_item">
+	                     <img src="../images/retail/ckg_retail.png" id="shake_icon">    
+	                </div>
+	    		</div>
+            </div>
           </div>
         </div>
 
@@ -467,62 +512,56 @@
 </body>
 <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	// function changeStyle(){
-	// 	this.onclick=function(){
-	// 		var list=this.parentNode.childNodes;
-	// 		for(var i=0;i<list.length;i++){
-	// 		    if(1==list[i].nodeType && 'active'==list[i].className){
-	// 		        list[i].className="";
-	// 			}
-	// 		}
-	// 		this.className='active';
-	// 	}
-	// }
-	// var tabs=document.getElementById('tabnav').childNodes;
-	// for(var i=0;i<tabs.length;i++){
-	//     if(1==tabs[i].nodeType){
-	//         changeStyle.call(tabs[i]);
-	//     }
-	// }
+    // 引入底部
+    $(document).ready(function(){
+		$(".ckg_header").load("./header/ckg_header_1.html");
+		$(".ckg_footer").load("./ckg_footer.html");
+	});
+	
+	// $("#menu").mouseover(function() {
+	// 	console.log('ok')
+	//     $("#ckg_menu_box").eq($(this).index()).show().siblings().hide();
+	// });
 
-	    var tabnav=document.getElementById('tabnav');
-        var liBtn=tabnav.getElementsByTagName('li');
-        var programmes=document.getElementsByClassName('programmes');
-        var ckgProgramme=document.getElementsByClassName('ckg_programme');
-        for(var i= 0;i<liBtn.length;i++)
-        {
-            liBtn[i].index=i;
-            liBtn[i].onclick= function () {
-            	console.log(this.index)
-            	var index=this.index;
-				switch (index)
-				{
-				case 0:
-				  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme0.png')" })
-				  break;
-				case 1:
-				  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme1.png')" })
-				  break;
-				case 2:
-				  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme2.png')" })
-				  break;
-				case 3:
-				  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme3.png')" })
-				  break;
-				case 4:
-				  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme4.png')" })
-				  break;
-				}
-               	
-                for(var i= 0;i<liBtn.length;i++){
-                	
-                    liBtn[i].className="";
-                    programmes[i].style.display="none"
-                }
-                this.className="active";
-                programmes[this.index].style.display="block";
-        }
-        }
+
+    var tabnav=document.getElementById('tabnav');
+    var liBtn=tabnav.getElementsByTagName('li');
+    var programmes=document.getElementsByClassName('programmes');
+    var ckgProgramme=document.getElementsByClassName('ckg_programme');
+    for(var i= 0;i<liBtn.length;i++)
+    {
+        liBtn[i].index=i;
+        liBtn[i].onclick= function () {
+        	console.log(this.index)
+        	var index=this.index;
+			switch (index)
+			{
+			case 0:
+			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme0.png')" })
+			  break;
+			case 1:
+			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme1.png')" })
+			  break;
+			case 2:
+			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme2.png')" })
+			  break;
+			case 3:
+			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme3.png')" })
+			  break;
+			case 4:
+			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme4.png')" })
+			  break;
+			}
+           	
+            for(var i= 0;i<liBtn.length;i++){
+            	
+                liBtn[i].className="";
+                programmes[i].style.display="none"
+            }
+            this.className="active";
+            programmes[this.index].style.display="block";
+    }
+    }
 
 
 	$('#tabs a').click(function(e) {
@@ -570,12 +609,6 @@
         }
         }
 
-    // 引入底部
-    $(document).ready(function(){
-		$(".ckg_header").load("./header/ckg_header_1.html");
-		$(".ckg_footer").load("./ckg_footer.html");
-	});
-
 
 
 
@@ -583,7 +616,7 @@
 
 		// $.ajax({
 		//     type: 'POST',
-		//     url: '/hims/api/commonPay/queryTransNo?access_token=´ getUrlParam(´access_token´)',
+		//     url: '/hims/api/commonPay/queryTransNo',
 		//     dataType:'json',
 		//     contentType:'application/json',
 		//     data: JSON.stringify(data),

@@ -52,6 +52,7 @@
 .ckg_login{
     margin-top: 20px;
     float: right;
+    display: none;
 }
 .ckg_menu .ckg_active a{
 	border-bottom: 2px solid #82b547;
@@ -70,6 +71,7 @@
 	z-index: 100;
 	padding: 24px 45px 43px 50px;
 	box-sizing: border-box;
+	display: none;
 }
 .ckg_menu_box_title{
 	margin-bottom: 25px;
@@ -86,4 +88,11 @@
 .ckg_menu_box_item_box .ckg_menu_box_item{
 	width: 20%;
 	cursor: pointer;
+}
+.ckg_menu_box_item_box .ckg_menu_box_item a{
+	color: #666666;
+	text-decoration: none;
+}
+.ckg_menu_box_item_box .ckg_menu_box_item.active a{
+	color: #82b547;
 }

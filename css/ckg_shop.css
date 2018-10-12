@@ -29,6 +29,9 @@
 	color: #ffffff;
 	margin: 30px 0 90px 0;
 }
+.ckg_banner .ckg_banner_item img{
+	width: 100%;
+}
 
 
 .ckg_wx{

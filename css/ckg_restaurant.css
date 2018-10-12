@@ -2,8 +2,8 @@
 	width: 100%;
 	height: 580px;
 	background-image: linear-gradient(0deg, 
-		#ff5f4b 100%, 
-		#ff8474 0%);
+		#8ce08a 100%, 
+		#61dd5e 0%);
 }
 .ckg_banner .ckg_banner_box{
 	width: 100%;
@@ -15,7 +15,6 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 .ckg_banner .ckg_banner_item .ckg_banner_title{
 	font-size: 50px;
@@ -28,18 +27,22 @@
 	color: #ffffff;
 	margin: 30px 0 90px 0;
 }
+.ckg_banner .ckg_banner_item:last-child{
+	justify-content: center;
+	align-items: center;
+}
 .ckg_banner .ckg_banner_item img{
-	width: 100%;
+	width: 371px;
 }
 
 .ckg_wx{
 	width: 100%;
-	height: 700px;
+	height: 900px;
 	background-color: #f6f7fb;
 }
 .ckg_wx .ckg_title{
 	text-align: center;
-	padding: 60px 0 100px 0;
+	padding: 60px 0 80px 0;
 	box-sizing: border-box;
 }
 .ckg_wx .ckg_title p{
@@ -58,18 +61,23 @@
 }
 .ckg_wx .ckg_card{
 	width: 100%;
+	height: 620px;
+	padding: 60px 157px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	box-shadow: 0px 1px 5px 0px 
+		rgba(4, 0, 0, 0.1);
 	display: flex;
 	flex-wrap: wrap;
 }
 .ckg_wx .ckg_card .ckg_card_item{
 	width: 33.333%;
-	height: 200px;
+	height: 160px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	margin-bottom: 25px;
 }
 .ckg_wx .ckg_card .ckg_card_item span{
 	font-size: 14px;
@@ -89,141 +97,192 @@
 	margin: 22px 0 13px 0;
 }
 
-
-.ckg_shop{
+.ckg_platform{
 	width: 100%;
+	height: 700px;
 	background-color: #ffffff;
 }
-.ckg_shop .ckg_title{
+.ckg_platform .ckg_title{
 	text-align: center;
 	padding: 60px 0 80px 0;
 	box-sizing: border-box;
 }
-.ckg_shop .ckg_title p{
+.ckg_platform .ckg_title p{
 	font-size: 18px;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 2px;
 	color: #666666;
 }
-.ckg_shop .ckg_title .ckg_p{
+.ckg_platform .ckg_title .ckg_p{
 	font-size: 32px;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 3px;
 	color: #353535;
 }
-.ckg_shop .ckg_card{
+.ckg_subject{
+	width: 100%;
+	display: flex;
+}
+.ckg_subject .ckg_subject_item{
+	width: 50%;
+	height: 444px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.ckg_subject .ckg_subject_item .ckg_left_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ckg_subject .ckg_subject_item .ckg_left_item img{
+	margin-right: 25px;
+}
+
+
+.ckg_span{
+	font-size: 22px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 18px;
+	letter-spacing: 0px;
+	color: #067503;
+	margin-top: 21px;
+}
+
+.ckg_function{
+	width: 100%;
+	height: 800px;
+	background-color: #ffffff;
+}
+.ckg_function .ckg_title{
+	text-align: center;
+	padding: 60px 0 80px 0;
+	box-sizing: border-box;
+}
+.ckg_function .ckg_title p{
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 2px;
+	color: #666666;
+}
+.ckg_function .ckg_title .ckg_p{
+	font-size: 32px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 3px;
+	color: #353535;
+}
+.ckg_function .ckg_card{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
-.ckg_shop .ckg_card .ckg_card_item{
-	width: 50%;
-	height: 175px;
+.ckg_function .ckg_card .ckg_card_item{
+	width: 23.5%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	margin-bottom: 30px;
+	margin-right: 1.5%;
 }
-.ckg_shop .ckg_card .ckg_card_item.ckg_shop_active{
-	background-color: #ffffff;
-	box-shadow: 1px 2px 10px 0px 
-		rgba(0, 0, 0, 0.1);
-	border: solid 1px #e2e2e2;
+.ckg_function .ckg_card .ckg_card_item:last-child{
+	margin-right: 0;
 }
-.ckg_shop .ckg_card .ckg_card_item .ckg_shop_left{
-	width: 20%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	padding-top: 45px;
-	box-sizing: border-box;
-}
-.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right{
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	padding-right: 55px;
-	box-sizing: border-box;
-}
-.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right span{
+.ckg_function .ckg_card .ckg_card_item span{
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 24px;
+	line-height: 18px;
 	letter-spacing: 0px;
 	color: #666666;
 }
-.ckg_shop .ckg_card .ckg_card_item .ckg_shop_right .ckg_span{
+.ckg_function .ckg_card .ckg_card_item .ckg_span{
 	font-size: 18px;
 	font-weight: normal;
 	font-stretch: normal;
 	line-height: 18px;
 	letter-spacing: 0px;
-	color: #ff5f4b;
-	margin-bottom: 20px;
+	color: #353535;
+	margin: 22px 0 13px 0;
 }
 
-.ckg_visitors{
+.ckg_tool{
 	width: 100%;
+	height: 800px;
 	background-color: #f6f7fb;
-	padding-bottom: 50px;
-	box-sizing: border-box;
 }
-.ckg_visitors .ckg_title{
+.ckg_tool .ckg_title{
 	text-align: center;
 	padding: 60px 0 80px 0;
 	box-sizing: border-box;
 }
-.ckg_visitors .ckg_title p{
+.ckg_tool .ckg_title p{
 	font-size: 18px;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 2px;
 	color: #666666;
 }
-.ckg_visitors .ckg_title .ckg_p{
+.ckg_tool .ckg_title .ckg_p{
 	font-size: 32px;
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 3px;
 	color: #353535;
 }
-.ckg_visitors .ckg_card{
+.ckg_tool .ckg_card{
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 }
-.ckg_visitors .ckg_card .ckg_card_item{
-	width: 33.333%;
-	height: 430px;
+.ckg_tool .ckg_card .ckg_card_item{
+	width: 31.7%;
+	height: 150px;
+	background-image: linear-gradient(0deg, 
+		#e7f7e6 0%, 
+		#c5f4c4 100%);
+	border-radius: 10px;
+	display: flex;
+	cursor: pointer;
+	margin-right: 1.5%;
+	margin-bottom: 1.5%;
+}
+.ckg_tool .ckg_card .ckg_card_item:last-child{
+	margin-right: 0;
+}
+.ckg_tool .ckg_card .ckg_card_item  .ckg_item_left{
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ckg_tool .ckg_card .ckg_card_item .ckg_item_right{
+	width: 65%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	margin-bottom: 30px;
+	align-items: flex-start;
 }
-.ckg_visitors .ckg_card .ckg_card_item span{
-	font-size: 14px;
+.ckg_tool .ckg_card .ckg_card_item .ckg_item_right span{
+	font-size: 16px;
 	font-weight: normal;
 	font-stretch: normal;
 	line-height: 18px;
 	letter-spacing: 0px;
 	color: #666666;
 }
-.ckg_visitors .ckg_card .ckg_card_item .ckg_span{
-	font-size: 18px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 18px;
-	letter-spacing: 0px;
+.ckg_tool .ckg_card .ckg_card_item .ckg_item_right span:first-child{
+	font-size: 20px;
 	color: #353535;
-	margin-top: 26px;
-	margin-bottom: 10px;
+	margin-bottom: 16px;
 }
+
 .ckg_scene{
 	width: 100%;
 	background-color: #ffffff;
@@ -232,7 +291,7 @@
 }
 .ckg_scene .ckg_title{
 	text-align: center;
-	padding: 60px 0 80px 0;
+	padding: 60px 0 70px 0;
 	box-sizing: border-box;
 }
 .ckg_scene .ckg_title p{
@@ -251,77 +310,39 @@
 }
 .ckg_scene .ckg_card{
 	width: 100%;
+	height: 377px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: wrap;
+	/* flex-wrap: wrap; */
 }
 .ckg_scene .ckg_card .ckg_card_item{
 	width: 18.5%;
-	height: 168px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	cursor: pointer;
-	margin-bottom: 1.5%;
 	margin-right: 1.5%;
 	position: relative;
 }
 .ckg_scene .ckg_card .ckg_card_item:nth-child(5n){
 	margin-right: 0;
 }
-.ckg_scene .ckg_card .ckg_card_item .ckg_mask{
+.ckg_scene .ckg_card .ckg_card_item .ckg_img_box{
+	width: 100%;
+	position: relative;
+}
+.ckg_scene .ckg_card .ckg_card_item .ckg_img_box .ckg_word_mask{
+	width: 100%;
+	height: 36px;
 	position: absolute;
-	top: 0;
 	left: 0;
-	z-index: 100;
-	width: 100%;
-	height: 168px;
-}
-.ckg_scene .ckg_card .ckg_card_item .ckg_word_box{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 101;
-	width: 100%;
-	height: 168px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	padding: 25px 0;
-	box-sizing: border-box;
-}
-.ckg_scene .ckg_card .ckg_card_item .ckg_word_box:hover{
-	background-color: #ff5f4b;
-	opacity: 0.6;
-}
-.ckg_scene .ckg_card .ckg_card_item .ckg_word_box span{
-	font-size: 18px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 18px;
-	letter-spacing: 0px;
-	color: #ffffff;
-	z-index: 8888;
-}
-
-
-
-
-
-.ckg_trial{
-	width: 100%;
-	background-image: linear-gradient(0deg,#ff5f4b 0%,#ff8474 100%);
-}
-.ckg_trial .ckg_title{
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
 	text-align: center;
-	padding: 30px 0 20px 0;
-	box-sizing: border-box;
+	line-height: 36px;
 }
-.ckg_trial .ckg_title .ckg_p{
-	font-size: 36px;
-	font-weight: normal;
-	font-stretch: normal;
-	letter-spacing: 0px;
+.ckg_scene .ckg_card .ckg_card_item .ckg_img_box .ckg_word_mask span{
+	font-size: 16px;
 	color: #ffffff;
 }
