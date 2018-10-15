@@ -57,6 +57,7 @@
 .ckg_menu .ckg_active a{
 	border-bottom: 2px solid #82b547;
 	margin-top: 17px;
+	color: #82b547;
 }
 .ckg_menu .ckg_active s{
 	border-right: 6px solid #82b547;

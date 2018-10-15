@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../assets/js/ckg_public.js"></script>
 </head>
-<body>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<!-- 顶部导航栏 -->
 	<header id="ckg_header" class="ckg_header"></header><!-- /header -->
 	<!-- 轮播图开始 -->
@@ -388,7 +388,7 @@
 		</div>
     </div>
     <!-- 案例展示 -->
-    <div class="ckg_case">
+    <div class="ckg_case" style="display: none;">
     	<div class="ckg_layout">
     		<div class="ckg_title">
     			<p class="ckg_p">案例展示</p>
