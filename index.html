@@ -4,21 +4,32 @@
 	<meta charset="UTF-8">
 	<title>cKugua-首页</title>
 	<link href="./favicon.ico" rel="shortcut icon" />
-	<link rel="stylesheet" type="text/css" href="../css/ckg_rest.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/button.css">
-	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/ckg_header.css">
-	<link rel="stylesheet" type="text/css" href="../css/ckg_footer.css">
-	<link rel="stylesheet" type="text/css" href="../css/ckg_index.css">
-	<link rel="stylesheet" type="text/css" href="../css/ckg_animation.css">
-	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="../assets/js/ckg_public.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/button.css">
+	<link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/ckg_header.css">
+	<link rel="stylesheet" type="text/css" href="./css/ckg_footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/ckg_index.css">
+	<link rel="stylesheet" type="text/css" href="./css/ckg_animation.css">
+	<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/ckg_public.js"></script>
+	<style type="text/css">
+		#ckg_header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+		}
+		.banner_box{
+			margin-top: 80px;
+		}
+	</style>
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<!-- 顶部导航栏 -->
 	<header id="ckg_header" class="ckg_header"></header><!-- /header -->
 	<!-- 轮播图开始 -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide banner_box" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -37,7 +48,7 @@
 	    				<a href="../../ckugua/html/ckg_retail.html" class="button button-action" style="width: 160px;height: 55px;line-height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(255, 255, 255, 0.3);border-radius: 5px; font-size: 20px;color: #ff8474;">了解详情</a>
 	    			</div>
 	    			<div class="ckg_banner_item">
-	                     <img src="../images/retail/ckg_retail.png" id="shake_icon">    
+	                     <img src="./images/retail/ckg_retail.png" id="shake_icon">    
 	                </div>
 	    		</div>
             </div>
@@ -51,7 +62,7 @@
 	    				<a href="../../ckugua/html/ckg_restaurant.html" class="button button-action" style="width: 160px;height: 55px;line-height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #8ce08a;">了解详情</a>
 	    			</div>
 	    			<div class="ckg_banner_item">
-	                     <img src="../images/restaurant/ckg_restaurant.png" id="shake_icon">    
+	                     <img src="./images/restaurant/ckg_restaurant.png" id="shake_icon">    
 	                </div>
 	    		</div>
             </div>
@@ -65,7 +76,7 @@
 	    				<a href="../../ckugua/html/ckg_shop.html" class="button button-action" style="width: 160px;height: 55px;line-height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #a85bf9;">了解详情</a>
 	    			</div>
 	    			<div class="ckg_banner_item">
-	                     <img src="../images/shop/ckg_shop.png" id="shake_icon">    
+	                     <img src="./images/shop/ckg_shop.png" id="shake_icon">    
 	                </div>
 	    		</div>
             </div>
@@ -79,7 +90,7 @@
 	    				<a href="../../ckugua/html/ckg_industry.html" class="button button-action" style="width: 160px;height: 55px;line-height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #fd6c6c;">了解详情</a>
 	    			</div>
 	    			<div class="ckg_banner_item">
-	                     <img src="../images/industry/ckg_industry.png" id="shake_icon">    
+	                     <img src="./images/industry/ckg_industry.png" id="shake_icon">    
 	                </div>
 	    		</div>
             </div>
@@ -112,19 +123,19 @@
     <div class="ckg_taps">
     	<div class="ckg_layout">
     		<div>
-    			<img src="../images/index/taps1.png">
+    			<img src="./images/index/taps1.png">
     			<span>10万+用户共同选择</span>
     		</div>
     		<div>
-    			<img src="../images/index/taps2.png">
+    			<img src="./images/index/taps2.png">
     			<span>电商全领域解决方案</span>
     		</div>
     		<div>
-    			<img src="../images/index/taps3.png">
+    			<img src="./images/index/taps3.png">
     			<span>全流程服务体系</span>
     		</div>
     		<div>
-    			<img src="../images/index/taps4.png">
+    			<img src="./images/index/taps4.png">
     			<span>更新迭代速度领先</span>
     		</div>
     	</div>
@@ -135,19 +146,19 @@
     		<div class="ckg_title">微信第三方开发服务平台</div>
     		<div class="ckg_card">
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_1.png">
+    				<img src="./images/index/wx_1.png">
     				<span>微信小程序</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_2.png">
+    				<img src="./images/index/wx_2.png">
     				<span>公众号管家</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_3.png">
+    				<img src="./images/index/wx_3.png">
     				<span>新媒体代运营</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_4.png">
+    				<img src="./images/index/wx_4.png">
     				<span>直播小程序</span>
     			</div>
     		</div>
@@ -170,7 +181,7 @@
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme1-1.png">
+									<img src="./images/index/ckg_programme1-1.png">
 								</div>
 							</div>
 						 </div>
@@ -181,7 +192,7 @@
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme2-2.png">
+									<img src="./images/index/ckg_programme2-2.png">
 								</div>
 							</div>
 						 </div>
@@ -192,7 +203,7 @@
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme3-3.png">
+									<img src="./images/index/ckg_programme3-3.png">
 								</div>
 							</div>
 						 </div>
@@ -203,7 +214,7 @@
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme4-4.png">
+									<img src="./images/index/ckg_programme4-4.png">
 								</div>
 							</div>
 						 </div>
@@ -214,7 +225,7 @@
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme5-5.png">
+									<img src="./images/index/ckg_programme5-5.png">
 								</div>
 							</div>
 						 </div>
@@ -246,26 +257,26 @@
     <div class="ckg_service">
     	<div class="ckg_layout">
     		<div class="ckg_title">
-    			<p class="ckg_p">开发服务</p>
-    			<p>整合多平台开发技术  提供高效优质的应用开发服务</p>
+    			<p class="ckg_p">解决方案</p>
+    			<p>更加垂直的行业解决方案，满足广泛的业务需求</p>
     		</div>
     		<div class="tab-contain">
 			    <!-- tab栏 -->
 			    <ul id="tabs">
 			      <li class="current"><a href="#" title="Android开发">
-			      	<img src="../images/index/Android_selected.png">
+			      	<img src="./images/index/Android_selected.png">
 			      	<span>Android开发</span>
 			      </a></li>
 			      <li><a href="#" title="IOS开发">
-			      	<img src="../images/index/IOS.png">
+			      	<img src="./images/index/IOS.png">
 			      	<span>IOS开发</span>
 			      </a></li>
 			      <li><a href="#" title="微信小程序开发">
-			      	<img src="../images/index/wxchart.png">
+			      	<img src="./images/index/wxchart.png">
 			      	<span>微信小程序开发</span>
 			      </a></li>
 			      <li><a href="#" title="微信公众平台开发">
-			      	<img src="../images/index/wxgzh.png">
+			      	<img src="./images/index/wxgzh.png">
 			      	<span>微信公众平台开发</span>
 			      </a></li>
 			    </ul>
@@ -273,7 +284,7 @@
 			    <div id="content">
 				    <div id="Android开发" class="item ckg_box_public show">
 				        <div class="ckg_item_left">
-				        	<img src="../images/index/Android_left.png">
+				        	<img src="./images/index/Android_left.png">
 				        </div>
 				        <div class="ckg_item_right">
 				        	<p>Android开发</p>
@@ -282,7 +293,7 @@
 				    </div>
 				    <div id="IOS开发" class="item ckg_box_public">
 				        <div class="ckg_item_left">
-				        	<img src="../images/index/IOS_left.png">
+				        	<img src="./images/index/IOS_left.png">
 				        </div>
 				        <div class="ckg_item_right">
 				        	<p>IOS开发</p>
@@ -291,7 +302,7 @@
 				    </div>
 				    <div id="微信小程序开发" class="item ckg_box_public">
 				        <div class="ckg_item_left">
-				        	<img src="../images/index/wxchart_left.png">
+				        	<img src="./images/index/wxchart_left.png">
 				        </div>
 				        <div class="ckg_item_right">
 				        	<p>微信小程序开发</p>
@@ -300,7 +311,7 @@
 				    </div>
 				    <div id="微信公众平台开发" class="item ckg_box_public">
 					    <div class="ckg_item_left">
-				        	<img src="../images/index/wxgzh_left.png">
+				        	<img src="./images/index/wxgzh_left.png">
 				        </div>
 				        <div class="ckg_item_right">
 				        	<p>微信公众平台开发</p>
@@ -324,37 +335,37 @@
 					    <div class="ctt list2">
 						    <div class="undis" style="display: block;" id="tbc_01">
 						    	<div class="ckg_all_p">
-						    		<img src="../images/index/unline.png">	
+						    		<img src="./images/index/unline.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_02">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/ser.png">	
+						    		<img src="./images/index/ser.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_03">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/fjwxchart.png">	
+						    		<img src="./images/index/fjwxchart.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_04">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/share.png">	
+						    		<img src="./images/index/share.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_05">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/wxshaer.png">	
+						    		<img src="./images/index/wxshaer.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_06">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/conte.png">	
+						    		<img src="./images/index/conte.png">	
 						    	</div>
 						    </div>
 						    <div class="undis" id="tbc_07">
 						     	<div class="ckg_all_p">
-						    		<img src="../images/index/fjwxchart.png">	
+						    		<img src="./images/index/fjwxchart.png">	
 						    	</div>
 						    </div>
 					    </div>
@@ -363,37 +374,37 @@
 				<div class="lfloat">
 					<ul id="nav">
 						<li class="bb" id="tb_1">
-							<img src="../images/index/unline_1.png">
+							<img src="./images/index/unline_1.png">
 							<span>线下扫码</span>
 							<span class="right_title">扫码小程序二维码 快速引流到店铺</span>
 						</li>
 						<li class="aa" id="tb_2">
-							<img src="../images/index/ser_1.png">
+							<img src="./images/index/ser_1.png">
 							<span>搜索查找</span>
 							<span class="right_title">在“小程序”中搜索找到你的小程序</span>
 						</li>
 						<li class="aa" id="tb_3">
-							<img src="../images/index/gzhgl_1.png">
+							<img src="./images/index/gzhgl_1.png">
 							<span>公众号关联</span>
 							<span class="right_title">从公众号关联小程序</span>
 						</li>
 						<li class="aa" id="tb_4">
-							<img src="../images/index/contshart_1.png">
+							<img src="./images/index/contshart_1.png">
 							<span>对话分享</span>
 							<span class="right_title">推荐小程序给微信好友</span>
 						</li>
 						<li class="aa" id="tb_5">
-							<img src="../images/index/qshart_1.png">
+							<img src="./images/index/qshart_1.png">
 							<span>微信群分享</span>
 							<span class="right_title">推荐小程序到微信群</span>
 						</li>
 						<li class="aa" id="tb_6">
-							<img src="../images/index/dblt_1.png">
+							<img src="./images/index/dblt_1.png">
 							<span>顶部聊天</span>
 							<span class="right_title">微信聊天主界面下拉打开最近浏览小程序</span>
 						</li>
 						<li class="aa" id="tb_7">
-							<img src="../images/index/fjwxchart_1.png">
+							<img src="./images/index/fjwxchart_1.png">
 							<span>附近的小程序</span>
 							<span class="right_title">企业资质可设置门店位置附近五公里内可展示小程序</span>
 						</li>
@@ -470,7 +481,7 @@
     		<div class="ckg_dynamic_box">
     			<div class="ckg_dynamic_item">
     				<div class="ckg_img_box">
-    					<img src="../images/index/ckg_company.png">
+    					<img src="./images/index/ckg_company.png">
     					<span class="ckg_introduce">公司动态</span>
     				</div>
     				<div class="ckg_company">
@@ -479,7 +490,7 @@
     			</div>
     			<div class="ckg_dynamic_item">
     				<div class="ckg_img_box">
-    					<img src="../images/index/ckg_product.png">
+    					<img src="./images/index/ckg_product.png">
     					<span class="ckg_introduce">产品动态</span>
     				</div>
     				<div class="ckg_company">
@@ -491,7 +502,7 @@
     			</div>
     			<div class="ckg_dynamic_item">
     				<div class="ckg_img_box">
-    					<img src="../images/index/ckg_new.png">
+    					<img src="./images/index/ckg_new.png">
     					<span class="ckg_introduce">最新活动</span>
     				</div>
     				<div class="ckg_company">
@@ -513,12 +524,12 @@
     <!-- 底部 -->
     <div class="ckg_footer"></div>
 </body>
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     // 引入底部
     $(document).ready(function(){
-		$(".ckg_header").load("./header/ckg_header_1.html");
-		$(".ckg_footer").load("./ckg_footer.html");
+		$(".ckg_header").load("./html/header/ckg_header_1.html");
+		$(".ckg_footer").load("./html/ckg_footer.html");
 	});
 	
 	// $("#menu").mouseover(function() {
