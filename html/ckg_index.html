@@ -13,6 +13,41 @@
 	<link rel="stylesheet" type="text/css" href="../css/ckg_animation.css">
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="../assets/js/ckg_public.js"></script>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+	<link href="../css/1.css" rel="stylesheet" />
+	<script type="text/javascript" src="../js/1.js"></script>
+	<!-- <style>
+		.m-slide .tab a{
+			height: 70px;
+		}
+		.right_box{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		.m-slide .tab a .right_box .tb{
+			font-size:16px;line-height: 22px;
+		}
+		.bizmail_loginpanel{font-size:12px;width:300px;height:auto;border:1px solid #cccccc;background:#ffffff;}
+		.bizmail_LoginBox{padding:10px 15px;}
+		.bizmail_loginpanel h3{padding-bottom:5px;margin:0 0 5px 0;border-bottom:1px solid #cccccc;font-size:14px;}
+		.bizmail_loginpanel form{margin:0;padding:0;}
+		.bizmail_loginpanel el input.text{fon{font-size:12px;width:100px;height:20px;margin:0 2px;border:1px solid #C3C3C3;border-color:#7C7C7C #C3C3C3 #C3C3C3 #9A9A9A;}
+		.bizmail_loginpanel .bizmail_column{height:28px;}
+		.bizmail_loginpanel .bizmail_column label{display:block;float:left;width:30px;height:24px;line-height:24px;font-size:12px;}
+		.bizmail_loginpanel .bizmail_column .bizmail_inputArea{float:left;width:240px;}
+		.bizmail_loginpanel .bizmail_column span{font-size:12px;word-wrap:break-word;margin-left: 2px;line-height:200%;}
+		.bizmail_loginpanel .bizmail_SubmitArea{margin-left:30px;clear:both;}
+		.bizmail_loginpanel .bizmail_SubmitArea a{font-size:12px;margin-left:5px;}
+		.bizmail_loginpanel select{width:110px;height:20px;margin:0 2px;}
+	</style>
+<script type="text/javascript" src="c="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  c"  charset="gb18030"></script>
+<script type="text/javascript">
+
+</script> -->
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<!-- 顶部导航栏 -->
@@ -84,30 +119,7 @@
 	    		</div>
             </div>
           </div>
-          <!-- <div class="item" style="background: #fd6c6c;" style="display: none;">
-            <div class="ckg_layout">
-            	<div class="ckg_banner_box">
-	    			<div class="ckg_banner_item">
-	    				<div class="ckg_banner_title">次点苦瓜</div>
-	    				<p>为中小企业赋能</p>
-	    				<a href="../../ckugua/html/ckg_industry.html" class="button button-action" style="width: 160px;height: 55px;line-height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #fd6c6c;">马上注册</a>
-	    			</div>
-	    			<div class="ckg_banner_item">
-	                     <img src="../images/index/1-5.png" id="shake_icon">    
-	                </div>
-	    		</div>
-            </div>
-          </div> -->
         </div>
-
-        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a> -->
     </div>
     <div class="ckg_taps">
     	<div class="ckg_layout">
@@ -135,19 +147,27 @@
     		<div class="ckg_title">微信第三方开发服务平台</div>
     		<div class="ckg_card">
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_1.png">
+    				<div class="box_box">
+    					<img src="../images/index/wx_1.png">
+    				</div>
     				<span>微信小程序</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_2.png">
+    				<div class="box_box">
+    					<img src="../images/index/wx_2.png">
+    				</div>
     				<span>公众号管家</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_3.png">
+    				<div class="box_box">
+    					<img src="../images/index/wx_3.png">
+    				</div>
     				<span>新媒体代运营</span>
     			</div>
     			<div class="ckg_card_item">
-    				<img src="../images/index/wx_4.png">
+    				<div class="box_box">
+    					<img src="../images/index/wx_4.png">
+    				</div>
     				<span>直播小程序</span>
     			</div>
     		</div>
@@ -163,18 +183,20 @@
     		<div class="ckg_tabs">
     			<div class='ckg_container' >
 					 <div id="tab_content">
-						 <div class="content programmes" style="display: block;">
+						 <div class="content programmes" id="l1" style="display: block;">
 							<div class="ckg_tab_box">
 								<div class="ckg_tab_title">
 									<p>新零售解决方案</p>
 									<p>通过高效易用的小程序建站工具，协助企业打造集品牌宣传、产品展示等多功能的个性化小程序官网，助力企业实现数字化转型与升级，进一步提升品牌形象，获取更多商机。</p>
 								</div>
 								<div class="ckg_img_box">
-									<img src="../images/index/ckg_programme1-1.png">
+									<img src="../images/index/1-1.png">
+									<img src="../images/index/1-1.png">
+									<img src="../images/index/1-1.png">
 								</div>
 							</div>
 						 </div>
-						 <div class="content programmes">
+						 <div class="content programmes" id="l2">
 							<div class="ckg_tab_box">
 								<div class="ckg_tab_title">
 									<p>智慧餐饮解决方案</p>
@@ -185,7 +207,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="content programmes">
+						 <div class="content programmes" id="l3">
 							<div class="ckg_tab_box">
 								<div class="ckg_tab_title">
 									<p>智慧美业解决方案</p>
@@ -196,7 +218,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="content programmes">
+						 <div class="content programmes" id="l4">
 							<div class="ckg_tab_box">
 								<div class="ckg_tab_title">
 									<p>社交电商解决方案</p>
@@ -207,7 +229,7 @@
 								</div>
 							</div>
 						 </div>
-						 <div class="content programmes">
+						 <div class="content programmes" id="l5">
 							<div class="ckg_tab_box">
 								<div class="ckg_tab_title">
 									<p>企业建站解决方案</p>
@@ -221,19 +243,19 @@
 					</div>
 					<div class="ckg_left">
 						<ul id='tabnav'>
-							<li class='liA active'>
+							<li class='contents l1 active' id="ckg_programme0">
 								新零售解决方案
 							</li>
-							<li class="liA">
+							<li class="contents l2" id="ckg_programme1">
 								智慧餐饮解决方案
 							</li>
-							<li class="liA">
+							<li class="contents l3" id="ckg_programme2">
 								智慧美业解决方案
 							</li>
-							<li class="liA">
+							<li class="contents l4" id="ckg_programme3">
 								社交电商解决方案
 							</li>
-							<li class="liA">
+							<li class="contents l5" id="ckg_programme4">
 								企业建站解决方案
 							</li>
 						</ul>
@@ -252,26 +274,30 @@
     		<div class="tab-contain">
 			    <!-- tab栏 -->
 			    <ul id="tabs">
-			      <li class="current"><a href="#" title="Android开发">
-			      	<img src="../images/index/Android_selected.png">
+			      <li class="current"><a href="#" class="" title="Android开发">
+			      	<img title="Android开发" src="../images/index/Android_selected.png">
 			      	<span>Android开发</span>
 			      </a></li>
 			      <li><a href="#" title="IOS开发">
-			      	<img src="../images/index/IOS.png">
+			      	<img title="IOS开发" src="../images/index/IOS.png">
 			      	<span>IOS开发</span>
 			      </a></li>
 			      <li><a href="#" title="微信小程序开发">
-			      	<img src="../images/index/wxchart.png">
+			      	<img title="微信小程序开发" src="../images/index/wxchart.png">
 			      	<span>微信小程序开发</span>
 			      </a></li>
 			      <li><a href="#" title="微信公众平台开发">
-			      	<img src="../images/index/wxgzh.png">
+			      	<img title="微信公众平台开发" src="../images/index/wxgzh.png">
+			      	<span>微信公众平台开发</span>
+			      </a></li>
+			      <li><a href="#" title="h5开发">
+			      	<img title="h5开发" src="../images/index/html5.png">
 			      	<span>微信公众平台开发</span>
 			      </a></li>
 			    </ul>
 			    <!-- 对应显示内容 -->
 			    <div id="content">
-				    <div id="Android开发" class="item ckg_box_public show">
+				    <div id="Android开发" class="item ckg_box_public" style="display: block;">
 				        <div class="ckg_item_left">
 				        	<img src="../images/index/Android_left.png">
 				        </div>
@@ -307,6 +333,15 @@
 				        	<p>覆盖多种智能终端，占据70%移动市场，企业快速推广APP的第一选择</p>
 				        </div>
 				    </div>
+				     <div id="h5开发" class="item ckg_box_public">
+					    <div class="ckg_item_left">
+				        	<img src="../images/index/html5_left.png">
+				        </div>
+				        <div class="ckg_item_right">
+				        	<p>HTML开发</p>
+				        	<p>覆盖多种智能终端，占据70%移动市场，企业快速推广APP的第一选择</p>
+				        </div>
+				    </div>
 				</div>
     		</div>
     	</div>
@@ -318,7 +353,7 @@
     			<p class="ckg_p">核心场景</p>
     			<p>更多小程序的应用场景</p>
     		</div>
-    		<div class="ckg_core_tab_box">
+    		<!-- <div class="ckg_core_tab_box">
 				<div class="lfloat ckg_left_box">
 				  	<div id="newinfo">
 					    <div class="ctt list2">
@@ -399,67 +434,201 @@
 						</li>
 					</ul>
 				</div>
+			</div> -->
+			<div class="m-slide" style="margin:30px auto; width: 1200px;">
+				<ul class="img" style="position: relative; width: 550px;">
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/unline.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/ser.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/fjwxchart.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/share.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/wxshaer.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/conte.png"></a></li>
+					<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/fjwxchart.png"></a></li>
+				</ul>
+				<ul class="tab" style="width: 650px;padding: 20px 0;box-sizing: border-box;">
+					<li class="box_width  on" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/unline_1.png">
+								<span style="font-size: 18px;">线下扫码</span>
+								<span class="tb" style="font-size: 18px;">扫码小程序二维码 快速引流到店铺</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/ser_1.png">
+								<span style="font-size: 18px;">搜索查找</span>
+								<span class="tb" style="font-size: 18px;">在“小程序”中搜索找到你的小程序</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/gzhgl_1.png">
+								<span style="font-size: 18px;">公众号关联</span>
+								<span class="tb" style="font-size: 18px;">从公众号关联小程序</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/contshart_1.png">
+								<span style="font-size: 18px;">对话分享</span>
+								<span class="tb" style="font-size: 18px;">推荐小程序给微信好友</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/qshart_1.png">
+								<span style="font-size: 18px;">微信群分享</span>
+								<span class="tb" style="font-size: 18px;">推荐小程序到微信群</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/dblt_1.png">
+								<span style="font-size: 18px;">顶部聊天</span>
+								<span class="tb" style="font-size: 18px;">微信聊天主界面下拉打开最近浏览小程序</span>
+							</div>
+						</a> 
+					</li>
+					<li class="box_width" style="height: 70px;">
+						<a href="#" style="">
+							<div class="right_box">
+								<img src="../images/index/fjwxchart_1.png">
+								<span style="font-size: 18px;">附近的小程序</span>
+								<span class="tb" style="font-size: 18px;">企业资质可设置门店位置附近五公里内可展示小程序</span>
+							</div>
+						</a> 
+					</li>
+				</ul>
 			</div>
 		</div>
     </div>
     <!-- 案例展示 -->
-    <div class="ckg_case" style="display: none;">
+    <div class="ckg_case"">
     	<div class="ckg_layout">
     		<div class="ckg_title">
     			<p class="ckg_p">案例展示</p>
     		</div>
     		<div class="ckg_case_box">
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">微信扫码体验</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p1.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_1.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">花之节蛋糕</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p2.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_2.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">醋泡同城信息网</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p3.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_3.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">安琪妙品花店</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p4.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_4.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">汉堡啤酒外送</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p5.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_5.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">灯具超市</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">水资兰旗舰店</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">英国婚纱摄影</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">家居装修</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">大有诚汝瓷</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">景德镇智能家居</div>
-    			</div>
-    			<div class="ckg_case_item">
-    				<div class="ckg_case_top"></div>
-    				<div class="ckg_case_bottom">甜舍烘培蛋糕店</div>
+    				<div class="ckg_case_top">
+    					<img src="../images/index/p6.png">
+    				</div>
+    				<div class="ckg_case_bottom">
+    					<img src="../images/index/logo_6.png">
+    					<div class="jylm">经营类目：蛋糕烘焙</div>
+    					<p>案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍案例介绍</p>
+    				</div>
     			</div>
     		</div>
+    		<a href="../../ckugua/html/ckg_case.html"><button class="btn">更多案例</button></a>
     	</div>
     </div>
+
+
+	<div class="hzhb">
+		<div class="ckg_layout">
+			<div class="ckg_title">
+    			<p class="ckg_p">合作伙伴</p>
+    			<p>次点苦瓜与合作伙伴共同打造互联网生态系统</p>
+    		</div>
+    		<div class="hzhb_box">
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_1.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_1_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_2.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_2_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_3.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_3_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_4.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_4_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_5.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_5_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_6.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_6_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_7.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_7_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    			<div class="hzhb_item">
+    				<div class="one_box box_public" style="background: url('../images/index/hz_8.png') no-repeat;background-position: center center;"></div>
+    				<div class="two_box box_public" style="background: url('../images/index/hz_8_active.png') no-repeat;background-position: center center;"></div>
+    			</div>
+    		</div>
+		</div>
+	</div>
+
     <!-- 小程序动态 -->
     <div class="ckg_dynamic">
     	<div class="ckg_layout">
@@ -521,69 +690,139 @@
 		$(".ckg_footer").load("./ckg_footer.html");
 	});
 	
+	
+
+    $(".ckg_case_item") .hover(function(){
+		var that = $(this);
+		that .children(".ckg_case_bottom").stop().animate({height:"300px"},200);
+	},function(){
+		var _that = $(this);
+		_that.children(".ckg_case_bottom").stop().animate({height:"150px"},200);
+	})
+
+	 $(".hzhb_item") .hover(function(){
+		var that = $(this);
+		that .children(".one_box").stop().animate({height:"0px"},200);
+		that .children(".two_box").stop().animate({height:"55px"},200);
+	},function(){
+		var _that = $(this);
+		_that.children(".one_box").stop().animate({height:"55px"},200);
+		_that.children(".two_box").stop().animate({height:"0px"},200);
+	})
+
 	// $("#menu").mouseover(function() {
 	// 	console.log('ok')
 	//     $("#ckg_menu_box").eq($(this).index()).show().siblings().hide();
 	// });
 
+	$('.l1').hover(function(){
+		$(".ckg_programme").css({"width":"100%","background":"url(../images/index/ckg_programme0.png) no-repeat","background-size":"100%","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+		$('#l1').css({"display":"block"});
+		$('#l2').css({"display":"none"});
+		$('#l3').css({"display":"none"});
+		$('#l4').css({"display":"none"});
+		$('#l5').css({"display":"none"});
+	})
+	$('.l2').hover(function(){
+		$(".ckg_programme").css({"width":"100%","background":"url(../images/index/ckg_programme1.png) no-repeat","background-size":"100%","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+		$('#l2').css({"display":"block"});
+		$('#l1').css({"display":"none"});
+		$('#l3').css({"display":"none"});
+		$('#l4').css({"display":"none"});
+		$('#l5').css({"display":"none"});
+	})
+	$('.l3').hover(function(){
+		$(".ckg_programme").css({"width":"100%","background":"url(../images/index/ckg_programme2.png) no-repeat","background-size":"100%","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+		$('#l3').css({"display":"block"});
+		$('#l2').css({"display":"none"});
+		$('#l1').css({"display":"none"});
+		$('#l4').css({"display":"none"});
+		$('#l5').css({"display":"none"});
+	})
+	$('.l4').hover(function(){
+		$(".ckg_programme").css({"width":"100%","background":"url(../images/index/ckg_programme3.png) no-repeat","background-size":"100%","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+		$('#l4').css({"display":"block"});
+		$('#l2').css({"display":"none"});
+		$('#l3').css({"display":"none"});
+		$('#l1').css({"display":"none"});
+		$('#l5').css({"display":"none"});
+	})
+	$('.l5').hover(function(){
+		$(".ckg_programme").css({"width":"100%","background":"url(../images/index/ckg_programme4.png) no-repeat","background-size":"100%","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+		$('#l5').css({"display":"block"});
+		$('#l2').css({"display":"none"});
+		$('#l3').css({"display":"none"});
+		$('#l4').css({"display":"none"});
+		$('#l1').css({"display":"none"});
+	})
 
-    var tabnav=document.getElementById('tabnav');
-    var liBtn=tabnav.getElementsByTagName('li');
-    var programmes=document.getElementsByClassName('programmes');
-    var ckgProgramme=document.getElementsByClassName('ckg_programme');
-    for(var i= 0;i<liBtn.length;i++)
-    {
-        liBtn[i].index=i;
-        liBtn[i].onclick= function () {
-        	console.log(this.index)
-        	var index=this.index;
-			switch (index)
-			{
-			case 0:
-			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme0.png')" })
-			  break;
-			case 1:
-			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme1.png')" })
-			  break;
-			case 2:
-			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme2.png')" })
-			  break;
-			case 3:
-			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme3.png')" })
-			  break;
-			case 4:
-			  $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme4.png')" })
-			  break;
-			}
+	$(".contents") .hover(function(){
+		var that = $(this);
+		console.log(this)
+        $(this).addClass('active').siblings().removeClass('active')
+	},function(){
+		var _that = $(this);
+	})
+
+
+   //  var tabnav=document.getElementById('tabnav');
+   //  var liBtn=tabnav.getElementsByTagName('li');
+   //  var programmes=document.getElementsByClassName('programmes');
+   //  var ckgProgramme=document.getElementsByClassName('ckg_programme');
+   //  for(var i= 0;i<liBtn.length;i++)
+   //  {
+   //      liBtn[i].index=i;
+   //      liBtn[i].onclick= function () {
+   //      	console.log(this.index)
+   //      	var index=this.index;
+			// switch (index)
+			// {
+			// case 0:
+			//   $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme0.png')" })
+			//   break;
+			// case 1:
+			//   $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme1.png')" })
+			//   break;
+			// case 2:
+			//   $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme2.png')" })
+			//   break;
+			// case 3:
+			//   $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme3.png')" })
+			//   break;
+			// case 4:
+			//   $(ckgProgramme).css({"background-image": "url('../images/index/ckg_programme4.png')" })
+			//   break;
+			// }
            	
-            for(var i= 0;i<liBtn.length;i++){
+   //          for(var i= 0;i<liBtn.length;i++){
             	
-                liBtn[i].className="";
-                programmes[i].style.display="none"
-            }
-            this.className="active";
-            programmes[this.index].style.display="block";
-    }
-    }
+   //              liBtn[i].className="";
+   //              programmes[i].style.display="none"
+   //          }
+   //          this.className="active";
+   //          programmes[this.index].style.display="block";
+   //  }
+   //  }
 
 
-	$('#tabs a').click(function(e) {
+	// $('#tabs a').click(function(e) {
+ //          e.preventDefault();                
+ //          $('#tabs li').removeClass("current").removeClass("hoverItem");
+ //          $(this).parent().addClass("current");
+ //          $("#content div").removeClass("show");
+ //          $('#' + $(this).attr('title')).addClass('show');
+ //     });
+
+	$('#tabs a img').on("mouseover",function(e) {
           e.preventDefault();                
           $('#tabs li').removeClass("current").removeClass("hoverItem");
-          $(this).parent().addClass("current");
-          $("#content div").removeClass("show");
-          $('#' + $(this).attr('title')).addClass('show');
+          $(this).parent().parent().addClass("current").siblings().removeClass('current');
+          // $("#content div").removeClass("show");
+          $("#content>div").hide(1000);
+          // $('#' + $(this).attr('title')).addClass('show');
+          $('#' + $(this).attr('title')).show(1500);
      });
-
-     $('#tabs a').hover(function(){
-        if(!$(this).parent().hasClass("current")){
-          $(this).parent().addClass("hoverItem");
-        }
-     },function(){
-        $(this).parent().removeClass("hoverItem");
-     });
-
-     $('#tabs a').click(function(event) {
+	$('#tabs a img').on("mouseover",function(event) {
      	console.log(event)
         if(event.target.tagName === 'IMG'){
 	        var nodes = $('#tabs li a img');
@@ -593,26 +832,47 @@
 	        event.target.src = event.target.src.replace(/.png|_selected.png/,'_selected.png');
     	}
 	})
+     // $('#tabs a').hover(function(e){
+     // 	console.log()
+     //    if(!$(this).parent().hasClass("current")){
+     //      $(this).parent().addClass("hoverItem");
+     //    }
+     // },function(){
+     //    $(this).parent().removeClass("hoverItem");
+     // });
+
+ //     $('#tabs a').click(function(event) {
+ //     	console.log(event)
+ //        if(event.target.tagName === 'IMG'){
+	//         var nodes = $('#tabs li a img');
+	//         for(var i=0; i<nodes.length; i++){
+	//             nodes[i].src = nodes[i].src.replace(/.png|_selected.png/,'.png');
+	//         }
+	//         event.target.src = event.target.src.replace(/.png|_selected.png/,'_selected.png');
+ //    	}
+	// })
 
 
-     	var c1=document.getElementById('nav');
-        var aBtn=c1.getElementsByTagName('li');
-        var c3=document.getElementsByClassName('undis');
-        for(var i= 0;i<aBtn.length;i++)
-        {
-            aBtn[i].index=i;
-            aBtn[i].onclick= function () {
-                for(var i= 0;i<aBtn.length;i++)
-                {
-                    aBtn[i].className="";
-                    c3[i].style.display="none"
-                }
-                this.className="bb";
-                c3[this.index].style.display="block";
-        }
-        }
 
 
+     	// var c1=document.getElementById('nav');
+      //   var aBtn=c1.getElementsByTagName('li');
+      //   var c3=document.getElementsByClassName('undis');
+      //   for(var i= 0;i<aBtn.length;i++)
+      //   {
+      //       aBtn[i].index=i;
+      //       aBtn[i].onclick= function () {
+      //           for(var i= 0;i<aBtn.length;i++)
+      //           {
+      //               aBtn[i].className="";
+      //               c3[i].style.display="none"
+      //           }
+      //           this.className="bb";
+      //           c3[this.index].style.display="block";
+      //   }
+      //   }
+
+        jQuery(".m-slide").slide({ titCell:".tab li", mainCell:".img",effect:"fold", autoPlay:true});
 
 
 

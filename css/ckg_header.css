@@ -1,16 +1,18 @@
 .ckg_header{
 	width: 100%;
 	height: 80px;
-	background-color: #ffffff;
+	background-color: #000;
 	box-shadow: 1px 2px 6px 0px 
 		rgba(130, 181, 71, 0.16);
 }
 #ckg_logo {
-    margin-top: 15px;
+    margin-top: 8px;
     float: left;
-    width: 54px;
-    height: 54px;
-    background: url('../images/logo.png') 0 0 no-repeat;
+    /* width: 54px;
+    height: 54px; */
+    width: 128px;
+    height: 26px;
+    background: url('../images/logo (1).png') 0 0 no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
@@ -95,5 +97,8 @@
 	text-decoration: none;
 }
 .ckg_menu_box_item_box .ckg_menu_box_item.active a{
+	color: #82b547;
+}
+.ckg_menu_box_item_box .ckg_menu_box_item a:hover{
 	color: #82b547;
 }

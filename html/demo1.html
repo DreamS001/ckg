@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<title>jQuery右侧选项卡点击标题切换图片内容特效</title>
+<link href="../css/1.css" rel="stylesheet" />
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/1.js"></script>
+<style type="text/css">
+	.m-slide .tab a{
+		height: 70px;
+	}
+	.right_box{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.m-slide .tab a .right_box .tb{
+		font-size:16px;line-height: 22px;color: #5a5a5a;
+	}
+</style>
+</head>
+<body>
+<div class="m-slide" style="margin:30px auto; width: 1200px;">
+	<ul class="img" style="position: relative; width: 550px;">
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/unline.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/ser.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/fjwxchart.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/share.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/wxshaer.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/conte.png"></a></li>
+		<li style="position: absolute; width: 550px; left: 0px; top: 0px; display: list-item;"> <a href="javascript:;" style="text-align: center;width: 100%;padding:14px 0 0 140px;box-sizing: border-box;"><img src="../images/index/fjwxchart.png"></a></li>
+	</ul>
+	<ul class="tab" style="width: 650px;padding: 20px 0;box-sizing: border-box;">
+		<li class="  on">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/unline_1.png">
+					<span>线下扫码</span>
+					<span class="tb">扫码小程序二维码 快速引流到店铺</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/ser_1.png">
+					<span>搜索查找</span>
+					<span class="tb">在“小程序”中搜索找到你的小程序</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/gzhgl_1.png">
+					<span>公众号关联</span>
+					<span class="tb">从公众号关联小程序</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/contshart_1.png">
+					<span>对话分享</span>
+					<span class="tb">推荐小程序给微信好友</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/qshart_1.png">
+					<span>微信群分享</span>
+					<span class="tb">推荐小程序到微信群</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/dblt_1.png">
+					<span>顶部聊天</span>
+					<span class="tb">微信聊天主界面下拉打开最近浏览小程序</span>
+				</div>
+			</a> 
+		</li>
+		<li class="">
+			<a href="#" style="">
+				<div class="right_box">
+					<img src="../images/index/fjwxchart_1.png">
+					<span>附近的小程序</span>
+					<span class="tb">企业资质可设置门店位置附近五公里内可展示小程序</span>
+				</div>
+			</a> 
+		</li>
+	</ul>
+</div>
+<script type="text/javascript">jQuery(".m-slide").slide({ titCell:".tab li", mainCell:".img",effect:"fold", autoPlay:true});</script>
+</body>
+</html>

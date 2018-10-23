@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cKugua-苦瓜案例</title>
+    <link href="./favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/button.css">
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_header.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/ckg_case.css">
+    <style type="text/css">
+        #ckg_header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .banner_box{
+            margin-top: 90px;
+        }
+    </style>
+</head>
+<body style="margin-top: -10px;">
+	<!-- 顶部导航栏 -->
+	<header id="ckg_header" class="ckg_header"></header><!-- /header -->
+    
+    <!-- banner -->
+    <div class="ckg_banner banner_box">
+        <div class="ckg_layout">
+            <div class="ckg_banner_box">
+                <div class="ckg_banner_item">
+                    <div class="ckg_banner_title">次点苦瓜</div>
+                    <p>为中小企业赋能</p>
+                    <!-- <button class="button button-action" style="width: 160px;height: 55px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 5px; font-size: 20px;color: #ff6754;">了解详情</button> -->
+                </div>
+                <div class="ckg_banner_item">
+                     <img src="../images/case/case.png">    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ckg_case">
+        <div class="ckg_layout" style="clear: both;">
+            <div class="ckg_box clearfloat">
+                <div class="ckg_item">
+                    <img src="../images/case/1-1.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-2.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-3.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-4.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-5.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-6.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-7.png">
+                </div>
+                <div class="ckg_item">
+                    <img src="../images/case/1-8.png">
+                </div>
+            </div>
+        </div>
+    </div>	
+
+	
+    <!-- 试用小程序 -->
+    <div class="ckg_trial" style="background-image: linear-gradient(0deg,#893dff 0%,#a85bf9 100%);display: none;">
+    	<div class="ckg_layout">
+    		<div class="ckg_title" style="text-align: center;padding: 30px 0 20px 0;box-sizing: border-box;">
+    			<p class="ckg_p" style="font-size: 36px;color: #ffffff;">立即注册免费试用最火爆的小程序</p>
+    			<button class="button button-action" style="width: 180px;height: 44px; background-color: #ffffff;box-shadow: 2px 3px 6px 0px rgba(130, 181, 71, 0.5);border-radius: 3px; font-size: 24px;color: #8f44fe;">立即注册</button>
+    		</div>
+    	</div>
+    </div>
+    <!-- 底部 -->
+    <div class="ckg_footer"></div>
+</body>
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".ckg_header").load("./header/ckg_header_9.html");
+		$(".ckg_footer").load("./ckg_footer.html");
+	});
+
+</script>
+
+
+</html>
