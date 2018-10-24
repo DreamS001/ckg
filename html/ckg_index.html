@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script>
+	//        若设备为移动设备，则跳转加载移动端样式
+        if((/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
+            window.location.href = 'http://localhost:8080/mobile/index.html';
+        }
+	</script>
 	<title>cKugua-首页</title>
 	<link href="./favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="../css/ckg_rest.css">
@@ -12,7 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/ckg_index.css">
 	<link rel="stylesheet" type="text/css" href="../css/ckg_animation.css">
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="../assets/js/ckg_public.js"></script>
+	<!-- <script type="text/javascript" src="../assets/js/ckg_public.js"></script> -->
 	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 
 	<link href="../css/1.css" rel="stylesheet" />
@@ -274,23 +280,23 @@
     		<div class="tab-contain">
 			    <!-- tab栏 -->
 			    <ul id="tabs">
-			      <li class="current"><a href="#" class="" title="Android开发">
+			      <li class="current" index="1"><a href="#" class="" title="Android开发">
 			      	<img title="Android开发" src="../images/index/Android_selected.png">
 			      	<span>Android开发</span>
 			      </a></li>
-			      <li><a href="#" title="IOS开发">
+			      <li index="2"><a href="#" title="IOS开发">
 			      	<img title="IOS开发" src="../images/index/IOS.png">
 			      	<span>IOS开发</span>
 			      </a></li>
-			      <li><a href="#" title="微信小程序开发">
+			      <li index="3"><a href="#" title="微信小程序开发">
 			      	<img title="微信小程序开发" src="../images/index/wxchart.png">
 			      	<span>微信小程序开发</span>
 			      </a></li>
-			      <li><a href="#" title="微信公众平台开发">
+			      <li index="4"><a href="#" title="微信公众平台开发">
 			      	<img title="微信公众平台开发" src="../images/index/wxgzh.png">
 			      	<span>微信公众平台开发</span>
 			      </a></li>
-			      <li><a href="#" title="h5开发">
+			      <li index="5"><a href="#" title="h5开发">
 			      	<img title="h5开发" src="../images/index/html5.png">
 			      	<span>微信公众平台开发</span>
 			      </a></li>
@@ -818,12 +824,25 @@
           $('#tabs li').removeClass("current").removeClass("hoverItem");
           $(this).parent().parent().addClass("current").siblings().removeClass('current');
           // $("#content div").removeClass("show");
-          $("#content>div").hide(1000);
+          $("#content>div").stop().hide();
           // $('#' + $(this).attr('title')).addClass('show');
-          $('#' + $(this).attr('title')).show(1500);
+          $('#' + $(this).attr('title')).stop().show(1500);
      });
-	$('#tabs a img').on("mouseover",function(event) {
+	// $('#tabs a img').on("mouseover",function(event) {
+ //     	console.log(event)
+ //        if(event.target.tagName === 'IMG'){
+	//         var nodes = $('#tabs li a img');
+	//         for(var i=0; i<nodes.length; i++){
+	//             nodes[i].src = nodes[i].src.replace(/.png|_selected.png/,'.png');
+	//         }
+	//         event.target.src = event.target.src.replace(/.png|_selected.png/,'_selected.png');
+ //    	}
+	// })
+
+
+	$('#tabs').on("mouseover","li",function(event) {
      	console.log(event)
+     	var preindex=$("li").attr("index");
         if(event.target.tagName === 'IMG'){
 	        var nodes = $('#tabs li a img');
 	        for(var i=0; i<nodes.length; i++){
@@ -832,6 +851,8 @@
 	        event.target.src = event.target.src.replace(/.png|_selected.png/,'_selected.png');
     	}
 	})
+
+
      // $('#tabs a').hover(function(e){
      // 	console.log()
      //    if(!$(this).parent().hasClass("current")){

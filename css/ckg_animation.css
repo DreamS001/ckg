@@ -5,7 +5,7 @@
 }
  
 @keyframes shaking{
-    25% {
+    /* 25% {
 		margin-top:-20px;
 	}
 	50% {
@@ -16,5 +16,26 @@
 	}
 	100% {
 		margin-top:10px;
+	} */
+	0%{
+		transform:translate(0,0)
+	}
+	25%{
+		transform:translate(0,-20px)
+	}
+	50%{
+		transform:translate(0,0)
+	}
+	75%{
+		transform:translate(0,20px)
+	}
+	100%{
+		transform:translate(0,0)
 	}
 }
+
+
+/* @keyframes heart{
+from{transform:translate(0,0)}
+to{transform:translate(0,6px)}
+} */

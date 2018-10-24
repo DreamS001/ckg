@@ -78,16 +78,16 @@
 		// })
 
 		$("#ckg_menu li").mouseover(function() {
-	        $(this).siblings('li').removeClass('ckg_active');  // 删除其他兄弟元素的样式
-	        $(this).addClass('ckg_active');// 添加当前元素的样式
+	        // $(this).siblings('li').removeClass('ckg_active');  // 删除其他兄弟元素的样式
+	        // $(this).addClass('ckg_active');// 添加当前元素的样式
 	        $('#ckg_menu_box2').css('display','none') 
 	        $('#ckg_menu_box1').css('display','none') 
 	    });
 
 
 		$(".menu1,#ckg_menu_box1").mouseover(function() {
-			$('.menu1').addClass('ckg_active')
-			$('.menu2').removeClass('ckg_active')
+			// $('.menu1').addClass('ckg_active')
+			// $('.menu2').removeClass('ckg_active')
 			$('#ckg_menu_box2').css('display','none')
 			$('#ckg_menu_box1').css('display','block')
 		});
@@ -95,8 +95,8 @@
 			$(this).css('display','none')
 		})
 		$(".menu2,#ckg_menu_box2").mouseover(function() {
-			$('.menu2').addClass('ckg_active')
-			$('.menu1').removeClass('ckg_active')
+			// $('.menu2').addClass('ckg_active')
+			// $('.menu1').removeClass('ckg_active')
 			$('#ckg_menu_box1').css('display','none')
 			$('#ckg_menu_box2').css('display','block')
 		});

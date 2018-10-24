@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style type="text/css">
+		body{
+            background-color: #EFEFEF;
+            margin: 0;
+            padding: 0;
+        }
+        ul,ul li{
+            margin:0;
+            padding: 0;
+        }
+        article .bottom{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            overflow: hidden;
+        }
+        article .bottom li{
+            /*display: inline-block;*/
+            float: left;
+            text-align: center;
+            width: 33%;
+            padding-top: 0.1rem;
+            font-size: 0.26rem;
+            list-style: none;
+        }
+
+        article .bottom li img{
+            width: 2.6rem;
+            display: inline-block;
+            margin-bottom: 0.1rem;
+        }
+	</style>
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<article>
+    <!--底部tab切换栏-->
+	    <ul class="bottom" id="bottom">
+	        <li>
+	            <img src="../images/index/Android_selected.png"/></br>
+	            <span>工作信息</span>
+	        </li>
+	        <li>
+	            <img src="../images/index/IOS.png" /></br>
+	            <span>支付宝</span>
+	        </li>
+	        <li>
+	            <img src="../images/index/html5.png" /></br>
+	            <span>更多信息</span>
+	        </li>
+	    </ul>
+    </article>
+</body>
+<script type="text/javascript">
+	$('#bottom').click(function(event) {
+		console.log(event)
+                if(event.target.tagName === 'IMG'){
+                var nodes = $('#bottom li img');
+                for(var i=0; i<nodes.length; i++){
+                    nodes[i].src = nodes[i].src.replace(/.png|_selected.png/,'.png');
+                }
+                event.target.src = event.target.src.replace(/.png|_selected.png/,'_selected.png');
+            }}
+            )
+</script>
+</html>
